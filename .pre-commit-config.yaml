@@ -1,6 +1,19 @@
-repos:
-- repo: https://github.com/ambv/black
-  rev: stable
-  hooks:
-  - id: black
-    language_version: python3
+fan:
+
+  - platform: xiaomi_miio_fan
+
+    name: Xiaomi Smart Fan
+
+    host: 192.168.0.116
+
+    token: ef8af45284b2eb2ff5b7ef4b0501bf80
+
+homeassistant:
+
+  customize:
+
+    fan.xiaomi_smart_fan:
+
+      friendly_name: 小米風扇 1X
+
+      homebridge_name: 小米風扇 1X
